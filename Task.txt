@@ -1,132 +1,169 @@
-Interview Project
-This project evaluates your technical skill, design sensibility, AI fluency, and ability to think like a product builder, not just a coder.
-The Brief / Introduction
-The world’s largest shopping malls are no longer just places to shop. They are massive, mixed-use destinations that combine retail, dining, entertainment, hospitality, and live events under one roof, often spanning millions of square feet and attracting tens of millions of visitors per year. Such properties operate more like small cities than traditional shopping centers. They host concert venues, theme parks, aquariums, luxury wings, convention spaces, and year-round programming that draws foot traffic no standalone retailer could generate on its own.
-For a property like this, the sales process is high-stakes. The commercial team is constantly pitching to prospective retail tenants (from luxury flagships to pop-up shops), corporate sponsors and brand partners (who want to activate inside the property), and event promoters and producers (who want to book the property’s venues for concerts, product launches, conventions, and more). Today, that pitch process is fragmented: a sales rep might pull up a YouTube video, flip through a static PDF, open a separate spreadsheet of demographics, and verbally narrate the story of the property. It’s manual, inconsistent, and doesn’t convey the scale or energy of what these properties actually are.
-Your assignment is to build the tool that replaces all of that.
-You will select one of the world’s largest shopping malls as your subject and build a fully interactive, browser-based sales deck for that property. Think of it as a cross between a high-end pitch deck, a luxury brand sales pitch, and an immersive destination experience, all in one. It should be a self-contained web application that a salesperson can screen-share on a live call or send as a standalone link that a prospect can explore on their own, with no one there to walk them through it.
-The tool’s primary audience is prospective tenants, sponsors, and event partners; decision- makers at brands, agencies, and production companies who are evaluating whether to invest in a presence at this property. The tool needs to make them feel the scale, the energy, and the commercial opportunity immediately. Within seconds, the viewer should understand why this property is different and why they need to be part of it. Every section should move them closer to a specific business action: signing a lease, committing to a sponsorship, or booking a venue.
-This is not a static website or a slide deck exported to HTML. It is a purpose-built interactive sales tool designed to tell the property’s story through video, data, imagery, and narrative; with the visual polish of a luxury brand and the interactivity of a modern web experience. The user controls their own journey through the content (non-linear navigation), video is the primary storytelling medium (not decoration), and the overall experience should feel cinematic, confident, and impossible to ignore.
-Choose Your Subject
-Select any of the world’s largest shopping malls as the subject of your project. We recommend choosing one from North America for familiarity and available media assets, but you may choose from the full list here:
-•       Wikipedia - List of the World’s Largest Shopping Malls
-Use publicly available assets from your chosen property: official videos, imagery from the mall’s website, press materials, and any promotional content you can find online. Supplement with strong AI-generated visuals where real assets are limited.
-What This Tool Must Do
-•       Tell the property’s story without anyone needing to explain it
-•       Create immediate emotional buy-in within the first 10 seconds
-•       Make prospective tenants, sponsors, and partners feel: “I need to be here.”
-•       Push toward action: leasing inquiries, sponsorship conversations, event bookings
-•       Work both on live sales calls (screen-shared) and as a standalone link someone can explore alone
-Primary Business Objectives
-Everything in the deck should serve at least one of these goals:
-•       Drive retail leasing deals (luxury, mid-tier, flagship, pop-up)
-•       Drive sponsorship and brand partnership deals
-•       Drive event bookings (concerts, activations, corporate events, product launches)
-•       Promote dedicated venue modules (Performing Arts Centers, Exposition Centers, etc.)
-Why This Matters
-Right now, presenting a property like this requires manually pulling up videos, jumping between files, and verbally explaining what people should be seeing. That’s broken. Your tool should eliminate all of that friction and let the experience speak for itself.
- 
- 
- 
- 
+AIM of Project:
+To build a scalable AI-driven ordering system by integrating an MCP-based Channel Menu service for real-time, accurate menu retrieval and reduced dependency on static menu mappings.
+
+Project Description:
+Developed a Commerce Workflow Agent integrated with a Drive-Thru MCP Server to dynamically fetch structured menu data, replacing fragile local menu caches. Improved AI accuracy, reduced hallucinations, and enabled consistent menu handling across multiple channels and markets.
+
+Roles and Responsibilities:
+
+Designed and developed MCP server modules for menu data exposure and querying
+Implemented Kafka-based event handling for real-time order workflows
+Built API services for resource handling, routing, and client interactions
+Developed health monitoring and observability metrics for system performance
+Improved AI reliability by eliminating dependency on localized menu mappings
+Contributed to modular backend architecture (models, tools, services)
+Performed unit testing and ensured service stability
+
+
+Tech Stack:
+Python, MCP Server, APIs, Kafka, Unit Testing
 
 
 
 
-Phase 1: Core Interactive Overview
-Build a world-class, fully interactive overview of your chosen property. It should be clean, tight, and high-impact. This is the minimum deliverable.
-Suggested Structure
-You are free to deviate, but the deck should cover these story beats:
-·       Opening: Cinematic intro (video or animated). Immediate impact: scale, energy, differentiation. The viewer should feel the ambition within seconds.
-·       Why This Property: Location, access, scale, visitor demographics, regional reach. Data-driven but visually compelling.
-·       Retail: The retail environment, key tenants, growth trajectory.
-·       Luxury: Elevated, distinct experience (if applicable). Showcase positioning.
-·       Dining & Lifestyle: Food as a lifestyle draw, not an afterthought.
-·       Attractions & Entertainment: Major differentiator. This is often what separates a mega-mall from a regular mall.
-·       Events & Platform: Concerts, brand activations, celebrity appearances. Position the property as a global platform, not just a building.
-Within this structure, include visibility into event hosting capabilities, performing arts potential, and exposition/convention center opportunities, assuming your chosen mall has them (or design them hypothetically).
-Phase 2: Expandable Architecture (Design With This in Mind)
-Phase 1 is the main deliverable. But your architecture should clearly support expansion into deeper, clickable sub-modules. We want to see that you’re thinking beyond the basics.
-If possible, build one or more of these as a working sub-section:
-•       Events Module: Detailed event hosting capabilities, past highlights, booking CTA
-•       Sponsorship Module: Partnership tiers, audience data, activation examples
-•       Leasing Paths: Segmented by category (luxury, retail, F&B, pop-up) with tailored pitches
-•       Venue-Specific Modules: Dedicated sections for performing arts centers, expo halls, or other key venues
- 
-
-
-Experience & Technical Requirements
-Interactive Navigation
-Non-linear. The viewer controls their journey; not forced through slides.
-Video-First
-Video is the primary storytelling medium, not decoration. Autoplay, scroll-triggered, and background video where appropriate.
-Clean UI
-Inspired by luxury brands (Apple, Hermès, Tesla). Minimal chrome, maximum impact.
-Fast & Performant
-90+ Lighthouse performance score. Lazy loading, optimized assets, no jank.
-Responsive
-Must work flawlessly on desktop and tablet. Mobile-friendly is a bonus.
-AI-Generated Assets
-Use generative AI to create imagery, renderings, or design elements where real assets are unavailable. Quality matters.
-Deployable
-Live URL via GitHub Pages, Vercel, Netlify, or equivalent. We will test it.
-Source Code
-Clean, well-structured GitHub repo. README with setup instructions.
-
-Creative Direction
-The final product should feel like: the structure of a Digideck, the polish of luxury fashion brands, the energy of Disney/Universal, and the scale of a global destination; all combined into one seamless, browser-based experience.
-Tone: Modern. Confident. High-energy.
-Bottom line: This tool should capture attention, hold engagement, and drive action. It should make someone say: “I want to be part of this.”
-Optional Design References
-Use these for structure, interaction patterns, pacing, and overall feel. Do not copy any single reference; combine the best elements across all of them.
-Interactive Deck / Digideck (Primary Format Reference)
-•       DigiDeck: https://www.thedigideck.com/
-•       Caruso (Digideck example)
-•       Celebrity Cruises (Digideck example)
-•       TD Garden / Boston Bruins (Digideck example)
-•       Tottenham Hotspur (Digideck example)
-Retail / Real Estate / Destination Storytelling
-•       https://thedubaimall.com/
-Experiential / Entertainment / Theme Park
-•       https://disneyland.disney.go.com/
-•       https://www.universalorlando.com/web/en/us/theme-parks/universal-studios-florida
-Luxury UI / High-End Brand Inspiration
-Apple.com · Tesla.com · Nike.com · LouisVuitton.com · Hermes.com · Gucci.com · SaintLaurent.com
-Event / Venue Inspiration
-Sphere Las Vegas · Madison Square Garden · SoFi Stadium · O2 Arena 
-Important: These references are for UX/UI direction, interaction design, and storytelling flow (not content). Your content should come from your selected mall’s publicly available media assets, supplemented by AI-generated visuals.  
-How We Evaluate Submissions
-Criteria
-Weight
-What We’re Looking For
-Visual & UX Design
-30%
-Does it feel premium? Is the interaction design intuitive and delightful? Does it hold attention?
-Technical Execution
-25%
-Code quality, architecture, performance, responsive behavior, deployment.
-AI Integration
-15%
-How effectively are AI tools used to generate assets, accelerate design, or enhance the experience?
-Storytelling & Strategy
-15%
-Does the deck tell a compelling story? Does it drive toward business action?
-Expandability
-10%
-Is the codebase modular? Can it grow into sub-modules without a rewrite?
-Attention to Detail
-5%
-Typography, spacing, loading states, edge cases, README quality.
 
 
 
-Submission Instructions
-Live URL: Deploy your project and share a public live link via GitHub Pages, Vercel, Netlify, or a similar platform.
-GitHub Repository: Share a public repository with clean code, a clear folder structure, meaningful commits, and a README that includes your tech stack, setup instructions, design decisions, and the AI tools you used.
-Brief Write-Up (Optional): You may also include a short 1–2 page write-up explaining your design rationale, how you used AI, and what you would improve with more time.
-Submission: Please email your live URL, GitHub repository link, and any optional write-up to medi@liat.ai
 
 
-We’re not looking for perfection. We’re looking for signal.
-Show us how you think, how you build, and how you use AI to move fast at a high level of craft. 
-The compensation can be much higher than the posted amount for exceptional candidates.
+
+
+
+Impact:
+
+Eliminated dependency on fragile, locally cached “Crew Menu”, reducing system instability
+Minimized AI hallucinations by enabling real-time, structured menu retrieval via MCP
+Improved menu consistency across markets by removing reliance on localized product codes and dictionaries
+Reduced manual effort and retraining costs associated with menu updates
+Enabled scalable, reusable menu service across ordering systems, Drive-Thru Orchestrator, and UI platforms
+Improved API reliability and integration success rates through standardized MCP interface
+Enhanced system observability with metrics like latency, task completion rate, and API success rates
+Accelerated response accuracy and reduced fallback scenarios in ordering workflows
+
+
+If you want, I can compress this further into 2–3 strong bullet points for top-tier product company resumes.
+Provide your feedback on BizChatYou said: Eliminated dependency on fragile, locally cached “Crew Menu”, reducing system instabilitycan you explain more for exampleCopilot said: CopilotHere’s a clearer, example-driven explanation you can use (spoken simply but still strong for interviews/resume discussion):
+
+Expanded Explanation with Example:
+Earlier, the system depended on a locally stored “Crew Menu”, which was basically a simplified, internal copy of the actual channel menu.
+👉 The problem:
+
+This Crew Menu had to be manually mapped from the real menu
+It also depended on market-specific product codes and localization dictionaries
+
+
+Example Scenario:
+Let’s say:
+
+
+In Market A, a product is stored as
+P123 → Chicken Burger
+
+
+In Market B, the same product is
+P789 → Zinger Burger
+
+
+Now, the AI doesn’t directly understand the product name. Instead, it sees:
+
+Internal mapping → "P123" or "P789"
+Then it tries to translate that using a dictionary
+
+
+What goes wrong in Stage 1:
+
+If mapping is outdated → AI may return wrong item
+If dictionary is missing → AI may hallucinate or guess
+If menu changes (new item added) → requires manual updates + retraining
+Different systems (AI vs ordering UI) may show different menu versions
+
+👉 Example failure:
+User: “I want a Zinger Burger”
+AI: Doesn’t find correct mapping → responds with
+"We don’t have that item" OR suggests wrong item
+
+How your MCP Server fixes it (Stage 2):
+Instead of relying on mappings:
+
+AI directly queries MCP server → gets:
+{
+  "product_name": "Zinger Burger",
+  "price": ...,
+  "availability": ...
+}
+
+
+
+✅ No product code confusion
+✅ No dictionary dependency
+✅ Always real-time and consistent
+
+Resulting Impact:
+
+Removes fragile mapping layer → less breakage
+Eliminates dependency on manual updates → lower maintenance
+Prevents mismatches across markets → standardized behavior
+Reduces hallucinations → better AI accuracy
+Ensures all systems (AI, ordering, UI) use same source of truth
+
+
+Resume-friendly short explanation:
+Replaced locally cached, manually mapped “Crew Menu” with real-time MCP-based menu retrieval, eliminating inconsistencies caused by product code variations and reducing system instability and AI hallucinations.
+
+If you want, I can also help you turn this into a strong interview answer (STAR format) 👍
+Provide your feedback on BizChatYou said: you can add this point deploying mcp into MCdonalds env is secure instead of sending data to directly AIso here you can add this in impactCopilot said: CopilotGreat addition—that’s actually a strong impact point, especially for product companies because it highlights security + architecture value.
+Here’s your updated Impact section with that included (clean & resume-ready):
+
+Impact:
+
+Eliminated dependency on fragile, locally cached “Crew Menu”, reducing system instability and manual mapping errors
+Minimized AI hallucinations by enabling real-time, structured menu retrieval via MCP
+Improved menu consistency across global markets by removing reliance on localized product codes and dictionaries
+Reduced manual updates and retraining effort, improving maintainability and scalability
+Enabled single source of truth for menu data across ordering systems, Drive-Thru Orchestrator, and UI platforms
+Improved API reliability and integration success rates through standardized MCP-based interface
+Enhanced system observability with metrics like latency, task completion rate, and API success
+Strengthened data security by deploying MCP within McDonald's environment, ensuring sensitive menu and operational data is not directly exposed to external AI systems
+Reduced fallback scenarios and improved overall ordering accuracy and response consistency
+
+
+💡 Short powerful 1-liner (optional for top resumes):
+Delivered a secure, MCP-based menu service that improved AI accuracy, eliminated fragile menu dependencies, and enabled real-time, standardized data access across systems.
+
+If you want, I can also help you convert this into STAR + interview storytelling (very useful for GenAI Engineer roles).
+Provide your feedback on BizChatYou said: convert this into STAR + interview storytellingCopilot said: CopilotHere’s a strong STAR-format + interview storytelling answer tailored to your project. You can directly use this in interviews:
+
+STAR Format Answer
+Situation:
+The existing FoodAI system relied on a locally cached “Crew Menu”, which was a simplified internal representation of the actual channel menu. This setup depended heavily on manual mappings and market-specific product codes, leading to inconsistencies, frequent updates, and higher chances of AI hallucinations when menu data was outdated or mismatched.
+
+Task:
+My goal was to design and implement a more reliable and scalable solution to provide real-time, consistent menu data that eliminates dependency on local caches and improves overall system accuracy, while also ensuring secure integration within enterprise environments.
+
+Action:
+I worked on developing a Drive-Thru MCP Server that exposes structured channel menu data using standardized, human-readable product attributes.
+
+Replaced static Crew Menu usage with dynamic menu retrieval via MCP APIs
+Built modular backend components including API routes, resource handlers, Kafka-based event processing, and health monitoring services
+Enabled systems to query menu data in real time, ensuring consistency across markets
+Ensured secure deployment within McDonald’s environment, so sensitive menu and operational data is not directly exposed to external AI systems
+Added observability support to track metrics like latency, API success rate, and system reliability
+
+
+Result:
+
+Eliminated fragile menu dependencies, significantly improving system stability
+Reduced AI hallucinations and ordering errors by providing accurate, real-time data
+Improved global consistency by removing reliance on product codes and localization mappings
+Lowered maintenance effort and retraining needs
+Strengthened data security by keeping all interactions within the enterprise environment instead of sending raw data to external AI
+Enhanced overall system performance and integration reliability
+
+
+Short Interview Story (30–40 sec version)
+“In the earlier system, the AI depended on a locally cached ‘Crew Menu’ which required manual mappings and often became outdated, leading to inconsistencies and hallucinations. I helped build an MCP-based server that exposes real-time, structured menu data, removing the need for those fragile mappings. This not only improved accuracy and consistency across markets but also reduced maintenance overhead. Additionally, we deployed it securely within the enterprise environment, ensuring sensitive data wasn’t exposed directly to AI systems. Overall, it significantly improved reliability, scalability, and system performance.”
+
+If you want, I can also give you:
+
+2-minute detailed version (for deep interviews)
+Follow-up Q&A (what challenges, trade-offs, why MCP, etc.) ✅
